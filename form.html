@@ -1,0 +1,53 @@
+<html>
+	<head>
+        <title> Form example </title>
+		<link href="css/style3.css" type = "text/css" rel = "stylesheet">
+		<meta charset = "Utf-8">
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<div id = "form">
+			<h1>Forma </h1>
+			<form action= "#" method = "post">
+				<div class = "row">
+					<p> <label for = "login"> Login</label> </p>
+					<input id = "login" type = "text" name = "login" maxlength = "5">
+				</div>
+				<div class = "row">
+					<p> <label for = "pass">Password </label> </p>
+					<input id = "pass" type = "password" name = "pass">
+				</div>
+				<div class = "row">
+					<p> Mark our sayt </p>
+					<label><input type = "radio" name = "evaluation" value = "exallant" checked = "checked"> Exallant </label> <br>
+					<label><input type = "radio" name = "evaluation" value = "good"> Good </label> <br>
+					<label><input type = "radio" name = "evaluation" value = "bad"> Bad </label><br>
+				</div>
+				<div class = "row">
+					<p> How You spend Your free time? </p>
+					<label><input type = "checkbox" name = "leisure[]" value = "read" checked = "checked"> Read book </label><br>
+					<label><input type = "checkbox" name = "leisure[]" value = "listen"> Leasen myusic </label> <br>
+					<label><input type = "checkbox" name = "leisure[]" value = "watch"> Watch TV </label> <br>
+					<label><input type = "checkbox" name = "leisure[]" value = "walk"> Walk with friends </label><br>
+				</div>
+				<div class = "row">
+				<p> <label for = "musicType"> What kind of music d You like? </type> </p>
+					<select name = "music[]" multiple = "multiple" size = "5" id = "musicType">
+						<option value = "1"> Rock </option>
+						<option value = "2"> Rep </option>
+						<option value = "3"> Pop-myusic </option>
+						<option value = "4"> Dzaz </option>
+						<option value = "5"> Bluz </option>
+					</select>
+				</div>
+				<div class = "row">
+				<p> <label for = "interested"> Your interested </label> </p>
+				<textarea name = "interested" rows = "4" cols = "45" id = "interested"> Text </textarea> <br>
+				</div>
+				<!-- <input type = "submit" name = "submit" value = "Send">
+				<input type = "reset" name = "reset" value = "Reset"> -->
+				<input type = "image" name = "send" src = "images/send_btn.png">
+			</form>
+		</div>
+	</body>
+</html>
